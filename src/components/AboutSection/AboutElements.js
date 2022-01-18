@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import img1 from '../../images/yeux.jpg';
+import yeux from '../../images/yeux.jpg';
 import evol from '../../images/evolution.png';
 
 export const AboutContainer = styled.div`
@@ -48,7 +48,7 @@ export const ImgContainer = styled.div`
 `
 
 export const Img = styled.div`
-    background-image: url(${img1});
+    background-image: url(${yeux});
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 80%;
@@ -120,7 +120,7 @@ export const Heading2 = styled.h1`
     margin-top: 100vh;
     transition: 0.8s ease-in-out !important;
 
-    top: 120px; 
+    top: 19vh;
     Left: 20px; 
     width: 100%;
 `
