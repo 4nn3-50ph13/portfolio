@@ -36,7 +36,7 @@ const LangBar = ({isOpen, toggle}) => {
     return (
         <LangContainer isOpen={isOpen} onClick={toggle}>
             <Icon onClick={toggle}>
-                <CloseIcon id="closeIcon"/>
+                <CloseIcon/>
             </Icon>
             <LangWrapper>
                 <LangLink onClick={() => changeLang("fr")}>Francais</LangLink>

@@ -41,8 +41,18 @@ html::-webkit-scrollbar { /* WebKit */
   padding: 0;
 }
 
-.isHovering {
-    background-color: red !important;
+
+.cursor{
+    position: fixed;
+    mix-blend-mode: exclusion; 
+    background-color: white;
+    transform: translateX(-20px) translateY(-20px);
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 999;
 }
 
 /* NAV */
@@ -156,15 +166,12 @@ html::-webkit-scrollbar { /* WebKit */
 }
 
 #techImg1 {
-    background-image: url(./images/face.jpg);
 }
 
 #techImg2 {
-    background-image: url(./images/face.jpg);
 }
 
 #techImg3 {
-    background-image: url(./images/face.jpg);
 }
 
 

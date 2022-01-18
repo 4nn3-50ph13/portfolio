@@ -138,16 +138,3 @@ export const LangBtn = styled.button`
         display: none;
     }
 `
-export const Cursor = styled.button`
-    position: fixed;
-    mix-blend-mode: exclusion; 
-    background-color: white;
-    transform: translateX(-30px) translateY(-30px);
-    width: 60px;
-    height: 60px;
-    border: none;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 999;
-    transition: 0.3s ease-in-out;
-`

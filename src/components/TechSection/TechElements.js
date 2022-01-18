@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import img1 from '../../images/face.jpg';
 import bg1 from '../../images/ehhhhh.png';
 import bg2 from '../../images/ehhhhhh.png';
 import bg3 from '../../images/ehhhhhhh.png';

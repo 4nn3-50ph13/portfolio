@@ -13,8 +13,8 @@ const AboutSection = () => {
     const [subtitleAfter, setSubtitleAfter] = useState("");
     
     const handleOffset = (offset) => {
-        setRelativeOffsetY1((offset/6) % (window.innerHeight));
-        setRelativeOffsetY2((offset/6) % (window.innerHeight)+window.innerHeight);
+        setRelativeOffsetY1((offset/5) % (window.innerHeight));
+        setRelativeOffsetY2((offset/5) % (window.innerHeight)+window.innerHeight);
 
         if(offset >= (window.innerHeight*1.2-40)) {
             setH1Style("HAfter");

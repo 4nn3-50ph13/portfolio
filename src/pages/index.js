@@ -5,20 +5,23 @@ import { Construction } from './PagesElements';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [isHovering, setIsHovering] = useState(false);
+    const [cursorX, setCursorX] = useState();
+    const [cursorY, setCursorY] = useState();
+
+    window.addEventListener('mousemove', (e) => {
+        setCursorX(e.pageX)
+        setCursorY(e.pageY - window.pageYOffset)
+    })
 
     const toggle = () => {
         setIsOpen(!isOpen);
     }
 
-    const hovering = () => {
-        setIsHovering(!isHovering);
-    }
-
     return (
         <>
             <LangBar isOpen={isOpen} toggle={toggle}/>
-            <TabBar toggle={toggle} isHovering={isHovering} hovering={hovering} />
+            <TabBar toggle={toggle}/>
+            <div className="cursor" style={{ left: cursorX + 'px', top: cursorY + 'px' }}> </div>
             <Construction style={{opacity: '20%'}}>This site is still being built and is unfinished. ___________________ Ce site est encore en construction et n'est pas fini.</Construction>
         </>
     )

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import topo from '../../images/topo.PNG';
 
 export const HomeContainer = styled.div`
     position: relative;
