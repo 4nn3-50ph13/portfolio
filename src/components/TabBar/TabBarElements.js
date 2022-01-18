@@ -1,24 +1,8 @@
 import styled from 'styled-components';
-import { Link as LinkR } from 'react-router-dom';
-import AboutBG from '../../images/ehhhhh.png';
 
 export const Container = styled.nav`
     width: 100%;
     height: 100%;
-`
-
-export const TabLogo = styled(LinkR)`
-    position: absolute;
-    color: #d3d3db;   
-    justify-self: flex-start;
-    cursor: pointer;
-    font-size: 1.5rem;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-family: 'UnifrakturMaguntia', cursive;
-    letter-spacing: 3px;
 `
 
 export const TabLink1 = styled.div`
@@ -30,14 +14,14 @@ export const TabLink1 = styled.div`
     transform: rotate(90deg);
 
     background: black;
-    font-size: 45px;
+    font-size: 40px;
     line-height: 40px;
     height: 30px;
     width: 140px;
     left: ${window.innerWidth - 130}px;
     top: -50px;
     color: transparent;
-    letter-spacing: 8px;
+    text-transform: uppercase;
     transition: 0.3s ease-in-out;
     
     &:hover {
@@ -56,15 +40,15 @@ export const TabLink2 = styled.div`
     transform: rotate(90deg);
 
     background: black;
-    font-size: 45px;
+    font-size: 40px;
     line-height: 40px;
     height: 30px;
-    width: 275px;
+    width: 300px;
     left: ${window.innerWidth - 90}px;
     top: -50px;
     color: transparent;
-    letter-spacing: 4px;
     transition: 0.3s ease-in-out;
+    text-transform: uppercase;
     
     &:hover {
         top: 0;
@@ -82,15 +66,15 @@ export const TabLink3 = styled.div`
     transform: rotate(90deg);
 
     background: black;
-    font-size: 45px;
+    font-size: 40px;
     line-height: 40px;
     height: 30px;
-    width: 105px;
+    width: 100px;
     left: ${window.innerWidth - 50}px;
     top: -50px;
     color: transparent;
-    letter-spacing: 8px;
     transition: 0.3s ease-in-out;
+    text-transform: uppercase;
     
     &:hover {
         top: 0;
@@ -108,15 +92,15 @@ export const TabLink4 = styled.div`
     transform: rotate(90deg);
 
     background: black;
-    font-size: 45px;
+    font-size: 40px;
     line-height: 40px;
     height: 30px;
-    width: 187px;
+    width: 193px;
     left: ${window.innerWidth - 10}px;
     top: -50px;
     color: transparent;
-    letter-spacing: 8px;
     transition: 0.3s ease-in-out;
+    text-transform: uppercase;
     
     &:hover {
         top: 0;
@@ -127,7 +111,9 @@ export const TabLink4 = styled.div`
 
 export const LangBtn = styled.button`
     position: absolute;
-    font-family: 'Staatliches', cursive;
+    font-family: 'Cormorant', serif;
+    font-size: 15px;
+    text-transform: uppercase;
     display: flex;
     align-items: center;
     width: 50px;
@@ -151,4 +137,17 @@ export const LangBtn = styled.button`
     @media screen and (max-width: 768px) {
         display: none;
     }
+`
+export const Cursor = styled.button`
+    position: fixed;
+    mix-blend-mode: exclusion; 
+    background-color: white;
+    transform: translateX(-30px) translateY(-30px);
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 999;
+    transition: 0.3s ease-in-out;
 `

@@ -39,9 +39,9 @@ export const Name = styled.p`
     algn-items: center;
     color: black;
     text-align: center;
-    font-size: 13.53vw;
-    height: 13.53vw;
-    font-family: 'Staatliches', cursive;
+    font-size: 9.5vw;
+    height: 9.5vw;
+    font-family: 'Cormorant', serif;
     z-index: 3;
     @media screen and (min-width: 1800px) {
         font-size: 243.425px;
@@ -55,11 +55,12 @@ export const Job1 = styled.p`
     algn-items: center;
     color: black;
     text-align: center;
-    font-size: 8.75vw;
-    height: 10vw;
-    font-family: 'Staatliches', cursive;
+    font-size: 6vw;
+    height: 6vw;
+    text-transform: uppercase;
+    font-family: 'Cormorant', serif;
+    margin-top: -2.3vw;
     z-index: 3;
-    margin-top: -2.5vw;
 
     @media screen and (min-width: 1800px) {
         font-size: 157.4px;
@@ -74,9 +75,11 @@ export const Job2 = styled.p`
     algn-items: flex-start;
     color: black;
     text-align: center;
-    font-size: 43vw;
-    font-family: 'Staatliches', cursive;
-    margin-top: -12.3vw;
+    font-size: 30vw;
+    height: 28.3vw;
+    text-transform: uppercase;
+    font-family: 'Cormorant', serif;
+    margin-top: -8.3vw;
     z-index: 3;
 
     @media screen and (min-width: 1800px) {
@@ -88,13 +91,9 @@ export const Job2 = styled.p`
 
 export const BackgroundImage = styled.div`
     position: absolute;
-    opacity: 30%;
     top: -15vh;
     left: -15vw;
-    background-image: url(${topo});
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto 100%;
+    background-color: #e3ddd8;
     width: 130vw;
     height: 130vh;
     z-index: 2;

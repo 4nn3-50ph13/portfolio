@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 const HomeSection = () => {
     const { t } = useTranslation();
-  const bg = document.querySelectorAll('.backgroundImage');
+  {/*const bg = document.querySelectorAll('.backgroundImage');
   const halfX = window.innerWidth / 2;
   const halfY = window.innerHeight / 2;
     
@@ -21,14 +21,15 @@ const HomeSection = () => {
       x: (e.clientX - halfX) * (i - 1) * 0.05,
       y: (e.clientY - halfY) * (i - 1) * 0.05 });
   });
-  });
+  });*/}
+
 
     
     return (
         <HomeContainer>
             <BackgroundImage className="backgroundImage"></BackgroundImage>
             <TextContainer></TextContainer>
-            <Name > anne-sophie cusson </Name>
+            <Name > ANNE-SOPHIE CUSSON </Name>
             <Job1 > {t('subtitle1')} </Job1>
             <Job2 > {t('subtitle2')} </Job2>
         </HomeContainer>

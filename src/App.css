@@ -1,26 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap");/*font-family: 'UnifrakturMaguntia', cursive;*/
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap");/*font-family: 'JetBrains Mono', monospace;*/
-@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet");/*font-family: 'Staatliches', cursive;*/
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap");/*font-family: 'Cormorant', serif;*/
 
 #stickyyy {
     position: sticky;
 }
 
 :nope {
-  background-color: #0a0a0a;
+    background-color: #e3ddd8;
   background-image: url(./images/ehhh.png);/*linear-gradient(#0e0e0f, #0a0a0a);#d3d3db, #d3d3db, #5d5d61);*/
   background-attachment: fixed;
 }
 
 html {
-    background-color: #fff;
+    background-color: #e3ddd8;
     overflow-y: scroll;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  --orangeColour: #d65a31;
-  --lightBg: #d3d3db;
-  --medBg: #5d5d61;
-  --darkBg: #19181C;
+    --orangeColour: #d65a31;
+    --lightBg: #d3d3db;
+    --medBg: #5d5d61;
+    --darkBg: #19181C;
 }
 
 html::-webkit-scrollbar { /* WebKit */
@@ -41,17 +41,8 @@ html::-webkit-scrollbar { /* WebKit */
   padding: 0;
 }
 
-.cursor{
-    position: fixed;
-    mix-blend-mode: exclusion; 
-    background-color: white;
-    transform: translateX(-20px) translateY(-20px);
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 999;
+.isHovering {
+    background-color: red !important;
 }
 
 /* NAV */
@@ -67,20 +58,17 @@ html::-webkit-scrollbar { /* WebKit */
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100vh 100vh;
-    font-family: 'Staatliches', cursive;
+    font-family: 'Cormorant', serif;
     border-radius: 5px;
     border: none;
     z-index: 300;
-}
-.TabLink:hover ~ .cursor {
-    transform: scale(5) translateX(-100px) translateY(-100px) !important;
 }
 
 .TabLinkClicked1 {
     display: flex;
     align-items: center;
     text-align: center;
-    font-family: 'Staatliches', cursive;
+    font-family: 'Cormorant', serif;
     color: white !important;
     top: 0 !important;
     height: 35px !important;
@@ -94,6 +82,8 @@ html::-webkit-scrollbar { /* WebKit */
 .TabLinkClicked2 {
     left: 100vw !important;
     height: 100vw !important;
+    font-size: 20vh !important;
+    line-height: 20vh !important;
     transition: 0.8s ease-in-out !important;
 }
 .TabLinkOver {
@@ -105,13 +95,6 @@ html::-webkit-scrollbar { /* WebKit */
     right: 120px !important;
 }
 
-#langLinks a {
-  transition: 1s;
-}
-#langLinks a:hover {
-  letter-spacing: 8px;
-  transition: 1s;
-}
 .content-tabs {
   flex-grow : 1;
 }
@@ -127,11 +110,30 @@ html::-webkit-scrollbar { /* WebKit */
   display: block !important;
 }
 
-/* HOME */
-/* HOME */
-/* HOME */
-/* HOME */
-/* HOME */
+/* ABOUT */
+/* ABOUT */
+/* ABOUT */
+/* ABOUT */
+/* ABOUT */
+
+.HBefore {
+    opacity: 0%;
+}
+.HAfter {
+    opacity: 100%;
+}
+.subtitleAfter {
+    transform-origin: center;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    font-size: 10vh !important;
+}
+.bioContainer {
+    color: #e3ddd8 !important;
+}
 
 
 /* TECH */

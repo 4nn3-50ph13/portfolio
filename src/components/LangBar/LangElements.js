@@ -6,7 +6,7 @@ export const LangContainer = styled.aside`
     z-index: 999;
     width: 100%;
     height: 100%;
-    background: white;
+    background-color: #e3ddd8;
     display: grid;
     align-items: center;
     top: 0;
@@ -17,7 +17,8 @@ export const LangContainer = styled.aside`
 `
 
 export const CloseIcon = styled(FaTimes)`
-    color: white;
+    color: #e3ddd8;
+    mix-blend-mode: exclusion; 
 `
 
 export const Icon = styled.div`
@@ -30,23 +31,29 @@ export const Icon = styled.div`
 `
 
 export const LangWrapper = styled.div`
-
+  letter-spacing: 8px;
+  transition: 1s;
 `
 
 export const LangLink = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
-    text-decoration: none;
-    list-style: none;
-    transition: 0.2s ease-in-out;
-    text-decoration: none;
+    height: 50vh;
+    width: 100vw;
     color: black;
-    font-family: 'Staatliches', cursive;
-    width: fit-content;
-    margin: auto;
-    padding: 30px;
+    font-family: 'Cormorant', serif;
+    font-size: 5vw;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    list-style: none;
+
+    &:hover {
+        font-size: 5vw;
+        letter-spacing: 12px;
+        color: #e3ddd8;
+        background-color: black;
+    }
 `
 
 export const SideBtnWrap = styled.div`

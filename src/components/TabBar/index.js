@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { IoLanguageOutline } from 'react-icons/io5';
-import { Container, TabLogo, TabLink1, TabLink2, TabLink3, TabLink4, LangBtn } from './TabBarElements';
+import { Container, TabLogo, TabLink1, TabLink2, TabLink3, TabLink4, LangBtn, Cursor } from './TabBarElements';
 import { useTranslation } from 'react-i18next';
 import { gsap } from 'gsap';
 import LangBar from '../LangBar'
@@ -13,12 +13,19 @@ import ContactSection from '../ContactSection';
 const Tabs = ({toggle}) => {
   const [toggleState, setToggleState] = useState(0);
   const { t } = useTranslation();
+  const [cursorX, setCursorX] = useState();
+  const [cursorY, setCursorY] = useState();
   const timerRef = useRef(null);
   const [styleClassAbout, setStyleClassAbout] = useState("TabLink");
   const [styleClassTech, setStyleClassTech] = useState("TabLink");
   const [styleClassArt, setStyleClassArt] = useState("TabLink");
   const [styleClassContact, setStyleClassContact] = useState("TabLink");
   const [styleClassLang, setStyleClassLang] = useState("TabLink");
+
+    window.addEventListener('mousemove', (e) => {
+        setCursorX(e.pageX)
+        setCursorY(e.pageY - window.pageYOffset)
+    })
 
   const toggleTab = (index) => {
     changeStyle(index);
@@ -75,6 +82,7 @@ const Tabs = ({toggle}) => {
             Languages
         </LangBtn>
         <TabLink1 className={styleClassAbout} onClick={() => toggleTab(1)} >{t('l1')}</TabLink1>
+        <Cursor style={{ left: cursorX + 'px', top: cursorY + 'px' }}> </Cursor>
         <TabLink2 className={styleClassTech} onClick={() => toggleTab(2)} >{t('l2')}</TabLink2>
         <TabLink3 className={styleClassArt} onClick={() => toggleTab(3)} >{t('l3')}</TabLink3>
         <TabLink4 className={styleClassContact} onClick={() => toggleTab(4)} >{t('l4')}</TabLink4>

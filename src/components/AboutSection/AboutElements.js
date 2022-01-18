@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import img1 from '../../images/yeux.jpg';
-import img2 from '../../images/evolution.png';
-import img3 from '../../images/ehhhh.png';
+import evol from '../../images/evolution.png';
 
 export const AboutContainer = styled.div`
     display: flex;
@@ -10,8 +9,8 @@ export const AboutContainer = styled.div`
     align-items: center;
     height: 100%;
     width: 100%;
-    padding-top: 200px;
-    color: #d3d3db;
+    color: black;
+    background-color: #e3ddd8;
 `
 
 export const SideBar = styled.div`
@@ -35,61 +34,6 @@ export const SideBar = styled.div`
     left: ${window.innerWidth - window.innerHeight*0.05}px;
     color: black;
     z-index: 900;
-`
-
-export const Heading1 = styled.h1`
-    position: sticky;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    font-family: 'Staatliches', cursive;
-    text-align: left;
-    width: 100%;
-    font-size: 30vh;
-    font-weight: 400;
-    letter-spacing: 8px;
-    color: black;
-    
-    top: -50px; 
-    Left: 20px; 
-    height: 30vh;
-`
-
-export const Heading2 = styled.h1`
-    position: sticky;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    font-family: 'Staatliches', cursive;
-    text-align: center;
-    width: 100%;
-    font-size: 25vh;
-    font-weight: 400;
-    letter-spacing: 8px;
-    color: black;
-    margin-top: 100vh;
-
-    top: 90px; 
-    Left: 20px; 
-    height: 25vh;
-    z-index: 10;
-`
-
-export const Subtitle = styled.p`
-    text-align: center;
-    width: 100%;
-    font-size: 24px;
-    padding: 12px;
-`
-
-export const Legend = styled.div`
-    width: 100%;
-    height: auto;
-    font-size: 12px;
-    font-style: italic;
-    text-align: center;
-    color: black;
-    margin-top: auto;
 `
 
 export const ImgContainer = styled.div`
@@ -117,60 +61,153 @@ export const Img = styled.div`
     z-index: 300;
 `
 
+export const Legend = styled.div`
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    color: black;
+    margin-top: auto;
+`
+
 export const BioContainer = styled.div`
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: transparent;
+    width: 100%;
+    height: 300vh;
+    font-size: 24px;
+    color: transparent;
+    margin-top: 120vh;
+    z-index: 300;
+    transition: 0.8s ease-in-out;
+`
+
+export const Heading1 = styled.h1`
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Cormorant', serif;
+    text-align: left;
+    font-size: 30vh;
+    font-weight: 400;
+    letter-spacing: 8px;
+    color: black;
+    transition: 0.8s ease-in-out !important;
+    
+    top: -40px; 
+    Left: 20px;
+    height: 30vh;
+    width: 100%;
+`
+
+export const Heading2 = styled.h1`
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Cormorant', serif;
+    text-align: center;
+    font-size: 20vh;
+    font-weight: 200;
+    letter-spacing: 8px;
+    color: black;
+    margin-top: 100vh;
+    transition: 0.8s ease-in-out !important;
+
+    top: 120px; 
+    Left: 20px; 
+    width: 100%;
+`
+
+export const TxtContainer = styled.div`
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    top: 0px; 
+`
+
+export const Subtitle = styled.div`
+    position: absolute;
+    margin-top: 44vh;
+    text-align: center;
+    width: 100vw;
+    font-size: 7vh;
+    transition: 0.8s ease-in-out;
+`
+
+export const BioTxtContainer = styled.div`
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 50vw;
+    transition: 0.8s ease-in-out;
+`
+
+export const BioText = styled.div`
+    font-size: 16px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 1vw;
+`
+
+export const EvolContainer = styled.div`
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: transparent;
     width: 100%;
     height: 300vh;
-    font-size: 24px;
-    z-index: 300;
-`
-
-export const BioText = styled.p`
-    width: 1111px;
-    font-size: 16px;
-    padding: 42px;
-    margin-bottom: 60px;
-`
-
-export const EvolContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    top: 700px;
+    margin-top: -100vh;
     font-size: 24px;
     font-weight: 600;
-    background-color: #d3d3db;
-    background-image: url(${img3});
-    background-repeat: no-repeat;
-    color: #19181C;
+    background-color: #e3ddd8;
+    color: black;
     padding-top: 60px;
-    z-index:10;
+    z-index: 330;
 `
 
 export const EvolDrawing = styled.div`
-    background-image: url(${img2});
+    position: sticky;
+    background-image: url(${evol});
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 97% auto;
-    width: 1111px;
+    background-size: 80% auto;
     height: 580px;
-    font-size: 16px;
-    margin-bottom: 40px;
-    padding-bottom: 0;
-    justify-content: space-between;
+    width: 100%;
+    top: -390px; 
+`
+export const EvolTitle = styled.div`
+    transform-origin: top right;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+
+    position: absolute;
+    font-size: 7vh;
+    text-align: right;
+    width: 100vh;
+    top: 0;
+    right: 100vw;
+    font-size: 10vh !important;
 `
 
 export const EvolText = styled.div`
+    position: sticky;
     width: 1111px;
     font-size: 16px;
     padding: 42px;
     margin-bottom: 60px;
+    top: 170px; 
 `

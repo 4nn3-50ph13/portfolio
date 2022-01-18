@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect }  from 'react';
 import { LangContainer, Icon, CloseIcon, LangWrapper, LangLink } from './LangElements';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
@@ -22,6 +22,7 @@ const LangBar = ({isOpen, toggle}) => {
      },
     };
     
+
     i18n
     .use(initReactI18next)
     .use(LanguageDetector)
@@ -35,9 +36,9 @@ const LangBar = ({isOpen, toggle}) => {
     return (
         <LangContainer isOpen={isOpen} onClick={toggle}>
             <Icon onClick={toggle}>
-                <CloseIcon/>
+                <CloseIcon id="closeIcon"/>
             </Icon>
-            <LangWrapper id="langLinks">
+            <LangWrapper>
                 <LangLink onClick={() => changeLang("fr")}>Francais</LangLink>
                 <LangLink onClick={() => changeLang("en")}>English</LangLink>
             </LangWrapper>
