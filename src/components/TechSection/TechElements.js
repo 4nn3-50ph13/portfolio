@@ -1,26 +1,39 @@
 import styled from 'styled-components';
-import bg1 from '../../images/ehhhhh.png';
-import bg2 from '../../images/ehhhhhh.png';
-import bg3 from '../../images/ehhhhhhh.png';
+
+export const SideBar = styled.div`
+    transform-origin: 0 0;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    
+    position: fixed;
+    background: white;
+    display: inline;
+    font-size: 4vh;
+    line-height: 5vh;
+    letter-spacing: 0.10vh;
+    height: 5vh;
+    width: 100vh;
+    border-top-style: solid;
+    border-top-width: 2px;
+    left: ${window.innerWidth - window.innerHeight*0.05}px;
+    color: black;
+    z-index: 900;
+`
 
 export const TechContainer = styled.div`
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
-    padding-top: 200px;
-    color: #d3d3db;
-`
-
-export const Heading = styled.h1`
-    top:200px;
-    left:0;
-    text-align: center;
-    width: 100%;
-    font-size: 42px;
-    font-weight: 400;
+    color: white;
+    background-color: black;
+    height: 400vh;
+    width: 100vw;
+    top: -90px;
 `
 
 export const Subtitle = styled.p`
@@ -28,6 +41,7 @@ export const Subtitle = styled.p`
     width: 100%;
     font-size: 24px;
     padding-bottom: 12px;
+    z-index: 800;
 `
 
 export const Legend = styled.div`
@@ -40,45 +54,40 @@ export const Legend = styled.div`
 `
 
 export const ProjectContainer = styled.div`
-    position: relative;
+    position: fixed;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 700px;
-    font-size: 24px;
-    padding-top: 45vh;
-    margin-top: 45vh;
-    margin-bottom: 45vh;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    
+    transition: 0.5s ease-in-out;
 `
 
 export const ImgContainer = styled.div`
-    position: absolute;
-    left: auto;
-    top: 0%;
-    right: 0%;
-    bottom: auto;
-    width: 75vw;
-    height: 150vh;
-    font-size: 24px;
-`
-
-export const Img = styled.div`
-    position: sticky;
+    position: fixed;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto 90%;
-    top: 20vh; 
-    height: 70vh;
-    width: 100%;
+    background-position: top;
+    background-size: 60% auto;
+    background-color: black;
+    font-family: 'Cormorant', serif;
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    border-radius: 50%;
+
+    transition: 0.5s ease-in-out !important;
 `
 
 export const ProjectText = styled.div`
-    z-index: 10;
-    position: relative;
-    height: 240px;
-    width: 60vw;
-    font-size: 16px;
-    padding: 24px;
+    color: white;
+    right: 0;
+    bottom: auto;
+    width: 100vh;
+    height: 100vh;
+    z-index: 800;
 `

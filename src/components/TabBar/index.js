@@ -1,9 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import { IoLanguageOutline } from 'react-icons/io5';
-import { Container, TabLogo, TabLink1, TabLink2, TabLink3, TabLink4, LangBtn } from './TabBarElements';
+import { Container, TabLink1, TabLink2, TabLink3, TabLink4, LangBtn } from './TabBarElements';
 import { useTranslation } from 'react-i18next';
-import { gsap } from 'gsap';
-import LangBar from '../LangBar'
 import HomeSection from '../HomeSection';
 import AboutSection from '../AboutSection';
 import ArtSection from '../ArtSection';
@@ -26,7 +24,7 @@ const Tabs = ({toggle}) => {
   };
 
   const changeStyle = (index) => {
-    if(index == 1){
+    if(index === 1){
         setStyleClassAbout("TabLink TabLinkClicked1");
         timerRef.current = setTimeout(() => setStyleClassAbout("TabLinkClicked1 TabLinkClicked2"), 500);
         timerRef.current = setTimeout(() => setStyleClassAbout("TabLinkClicked1 TabLinkClicked2 TabLinkOver"), 1300);
@@ -35,7 +33,7 @@ const Tabs = ({toggle}) => {
         timerRef.current = setTimeout(() => setStyleClassContact("TabLinkOver"), 1300);
         timerRef.current = setTimeout(() => setStyleClassLang("LangLinkAfter"), 1300);
     }
-    if(index == 2){
+    if(index === 2){
         setStyleClassTech("TabLinkClicked1");
         timerRef.current = setTimeout(() => setStyleClassTech("TabLinkClicked1 TabLinkClicked2"), 500);
         timerRef.current = setTimeout(() => setStyleClassTech("TabLinkClicked1 TabLinkClicked2 TabLinkOver"), 1300);
@@ -44,7 +42,7 @@ const Tabs = ({toggle}) => {
         timerRef.current = setTimeout(() => setStyleClassContact("TabLinkOver"), 1300);
         timerRef.current = setTimeout(() => setStyleClassLang("LangLinkAfter"), 1300);
     }
-    if(index == 3){
+    if(index === 3){
         setStyleClassArt("TabLinkClicked1");
         timerRef.current = setTimeout(() => setStyleClassArt("TabLinkClicked1 TabLinkClicked2"), 500);
         timerRef.current = setTimeout(() => setStyleClassArt("TabLinkClicked1 TabLinkClicked2 TabLinkOver"), 1300);
@@ -53,7 +51,7 @@ const Tabs = ({toggle}) => {
         timerRef.current = setTimeout(() => setStyleClassContact("TabLinkOver"), 1300);
         timerRef.current = setTimeout(() => setStyleClassLang("LangLinkAfter"), 1300);
     }
-    if(index == 4){
+    if(index === 4){
         setStyleClassContact("TabLinkClicked1");
         timerRef.current = setTimeout(() => setStyleClassContact("TabLinkClicked1 TabLinkClicked2"), 500);
         timerRef.current = setTimeout(() => setStyleClassContact("TabLinkClicked1 TabLinkClicked2 TabLinkOver"), 1300);
@@ -74,6 +72,8 @@ const Tabs = ({toggle}) => {
             }}/>
             Languages
         </LangBtn>
+        
+
         <TabLink1 className={styleClassAbout} onClick={() => toggleTab(1)} >{t('l1')}</TabLink1>
         <TabLink2 className={styleClassTech} onClick={() => toggleTab(2)} >{t('l2')}</TabLink2>
         <TabLink3 className={styleClassArt} onClick={() => toggleTab(3)} >{t('l3')}</TabLink3>

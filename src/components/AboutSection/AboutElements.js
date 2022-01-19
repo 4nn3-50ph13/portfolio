@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import yeux from '../../images/yeux.jpg';
-import evol from '../../images/evolution.png';
+import yeux from '../../images/about/yeux.jpg';
+import evol from '../../images/about/evolution.png';
 
 export const AboutContainer = styled.div`
     display: flex;
