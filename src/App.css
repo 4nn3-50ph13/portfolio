@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap");/*font-family: 'UnifrakturMaguntia', cursive;*/
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap");/*font-family: 'JetBrains Mono', monospace;*/
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap");/*font-family: 'Cormorant', serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");/*font-family: 'Cormorant Garamond', serif;*/
 
 #stickyyy {
     position: sticky;
@@ -11,7 +12,7 @@ path {
 }
 
 html {
-    background-color: #e3ddd8;
+    background-color: white;
     overflow-y: scroll;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
@@ -140,7 +141,7 @@ html::-webkit-scrollbar { /* WebKit */
     font-size: 10vh !important;
 }
 .bioContainer {
-    color: #e3ddd8 !important;
+    color: white !important;
 }
 
 
@@ -200,6 +201,7 @@ html::-webkit-scrollbar { /* WebKit */
     width: 0vh !important;
     top: 50vh !important;
     left:  50vw !important;
+    color:  transparent !important;
 }
 
 

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { horloge, AiguilleHeures, AiguilleMinutes, AiguilleSecondes } from './ContactElements';
+import { Clock, AiguilleHeures, AiguilleMinutes, AiguilleSecondes } from './ContactElements';
 
 export default class Horloge extends Component {
   constructor(props) {
@@ -23,7 +23,7 @@ export default class Horloge extends Component {
 
   render() {
     return (
-      <horloge className="horloge">
+      <Clock>
         <AiguilleHeures
           style={{
             transform: `rotateZ(${this.state.time.getHours() * 30}deg)`
@@ -39,7 +39,7 @@ export default class Horloge extends Component {
             transform: `rotateZ(${this.state.time.getSeconds() * 6}deg)`
           }}
         />
-      </horloge>
+      </Clock>
     );
   }
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SideBar, TechContainer, Subtitle, Legend, ProjectContainer, ProjectText, ImgContainer} from './TechElements';
+import { SideBar, TechContainer, Subtitle, ProjectContainer, ProjectText, ImgContainer, Number} from './TechElements';
 import { useTranslation } from 'react-i18next';
 import aeponyxLogo from '../../images/proj/AeponyxLogo.png';
 
@@ -58,7 +58,22 @@ const TechSection = () => {
             </svg>
 
             <ProjectContainer className={p1Style ? "projBeforeOuter" : "projAfter"}>
-                <ImgContainer className={p1Style ? "projBeforeInner" : "projAfter"} style={{backgroundImage: `url(${aeponyxLogo})`}}><Legend>{t('proj1Legend')}</Legend></ImgContainer>
+                <ImgContainer className={p1Style ? "projBeforeInner" : "projAfter"} ></ImgContainer>{/*style={{backgroundImage: `url(${aeponyxLogo})`}}*/}
+                
+                <ProjectText className={p1Style ? "projBeforeInner" : "projAfter"}>{t('proj1Texta')}</ProjectText>
+                <ProjectText className={p1Style ? "projBeforeInner" : "projAfter"} style={{marginTop: '10vh', fontSize: '8vh'}}>{t('proj1Textb')}</ProjectText>
+                
+                <Number style={{top: '30vh', right: '35vw'}}>1</Number>
+                <ProjectText className={p1Style ? "projBeforeInner" : "projAfter"} style={{marginTop: '26vh', textAlign: 'left', paddingLeft: '5vh'}}>{t('proj1Textc')}</ProjectText>
+                <ProjectText className={p1Style ? "projBeforeInner" : "projAfter"} style={{marginTop: '32vh', textAlign: 'left', paddingLeft: '3.5vh'}}>{t('proj1Textd')}</ProjectText>
+                <ProjectText className={p1Style ? "projBeforeInner" : "projAfter"} style={{marginTop: '38vh'}}>{t('proj1Texte')}</ProjectText>
+                <ProjectText className={p1Style ? "projBeforeInner" : "projAfter"} style={{marginTop: '45vh', fontSize: '3vh'}}>2021.01.07 - 2021.04.17</ProjectText>
+                
+                <Number style={{top: '65vh', right: '62vw'}}>2</Number>
+                <ProjectText className={p1Style ? "projBeforeInner" : "projAfter"} style={{marginTop: '52vh', textAlign: 'right', paddingRight: '5vh'}}>{t('proj1Textf')}</ProjectText>
+                <ProjectText className={p1Style ? "projBeforeInner" : "projAfter"} style={{marginTop: '58vh', textAlign: 'right', paddingRight: '5vh'}}>{t('proj1Textg')}</ProjectText>
+                <ProjectText className={p1Style ? "projBeforeInner" : "projAfter"} style={{marginTop: '64vh'}}>{t('proj1Texth')}</ProjectText>
+                <ProjectText className={p1Style ? "projBeforeInner" : "projAfter"} style={{marginTop: '71vh', fontSize: '3vh'}}>2021.07.07 - 2021.12.17</ProjectText>
             </ProjectContainer>
             
 
@@ -71,7 +86,8 @@ const TechSection = () => {
             </svg>
 
             <ProjectContainer className={p2Style ? "projBeforeOuter" : "projAfter"}>
-                <ImgContainer className={p2Style ? "projBeforeInner" : "projAfter"}><Legend>{t('proj1Legend')}</Legend></ImgContainer>
+                <ImgContainer className={p2Style ? "projBeforeInner" : "projAfter"}></ImgContainer>
+                <ProjectText className={p2Style ? "projBeforeInner" : "projAfter"}>{t('proj2Text')}</ProjectText>
             </ProjectContainer>
             
 
@@ -84,7 +100,8 @@ const TechSection = () => {
             </svg>
 
             <ProjectContainer className={p3Style ? "projBeforeOuter" : "projAfter"}>
-                <ImgContainer className={p3Style ? "projBeforeInner" : "projAfter"}><Legend>{t('proj2Legend')}</Legend></ImgContainer>
+                <ImgContainer className={p3Style ? "projBeforeInner" : "projAfter"}></ImgContainer>
+                <ProjectText className={p3Style ? "projBeforeInner" : "projAfter"}>{t('proj3Text')}</ProjectText>
             </ProjectContainer>
             
 
@@ -98,7 +115,8 @@ const TechSection = () => {
             </svg>
 
             <ProjectContainer className={p4Style ? "projBeforeOuter" : "projAfter"}>
-                <ImgContainer className={p4Style ? "projBeforeInner" : "projAfter"}><Legend>{t('proj2Legend')}</Legend></ImgContainer>
+                <ImgContainer className={p4Style ? "projBeforeInner" : "projAfter"}></ImgContainer>
+                <ProjectText className={p4Style ? "projBeforeInner" : "projAfter"}>{t('proj4Text')}</ProjectText>
             </ProjectContainer>
 
 

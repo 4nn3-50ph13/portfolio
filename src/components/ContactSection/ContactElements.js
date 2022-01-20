@@ -1,13 +1,13 @@
 import styled from 'styled-components';
+import horlogeFace from '../../images/cercle.png';
 
 export const ContactContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 150px;
-    height: 2400px;
-    z-index: 1;
+    position: relative;
+    background-color: white;
+    margin-top: -90px;
+
+    height: 200vh;
+    width: 100vw;
 `
 
 export const Heading = styled.h1`
@@ -24,60 +24,59 @@ export const Heading = styled.h1`
     }
 `
 
-export const horloge = styled.div`
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
-    font-size: 24px;
-    color: #444;
-    text-align: center;
+export const Clock = styled.div`
+    position: relative;
+    background-image: url(${horlogeFace});
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100vh auto;
+    background-color: white;
 
-    &:after {
-        background: #aaa;
-        content: "";
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        position: absolute;
-        z-index: 2;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border: 2px solid #fff;
-    }
+    height: 100vh;
+    width: 100vw;
+
+    top: 0;
+    left: 0;
+
 `
 
 export const AiguilleHeures = styled.div`
     position: absolute;
-    width: 6px;
-    height: 60px;
-    background: #222;
-    top: 30%;
-    left: 49%;
+    width: 1vh;
+    height: 25vh;
+    background: black;
+    top: 25vh;
+    left: 50vw;
     transform-origin: bottom;
 `
 
 export const AiguilleMinutes = styled.div`
     position: absolute;
-    width: 4px;
-    height: 80px;
-    background: #444;
-    top: 22.5%;
-    left: 49%;
+    width: 0.5vh;
+    height: 38vh;
+    background: black;
+    top: 12vh;
+    left: 50vw;
     transform-origin: bottom;
 `
 
 export const AiguilleSecondes = styled.div`
     position: absolute;
-    width: 2px;
-    height: 118px;
-    background: red;
-    top: 10.5%;
-    left: 50%;
+    width: 1vh;
+    height: 14vh;
+    background: black;
+    top: 56vh;
+    left: 49.6vw;
     transform-origin: bottom;
+`
+
+export const Quote = styled.div`
+    position: absolute;
+    width: 25vw;
+    height: 14vh;
+    font-size: 3vh;
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    top: 20vh;
+    right: 74vw;
 `

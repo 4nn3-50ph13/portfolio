@@ -44,15 +44,6 @@ export const Subtitle = styled.p`
     z-index: 800;
 `
 
-export const Legend = styled.div`
-    margin-top: auto;
-    width: 100%;
-    height: auto;
-    font-size: 12px;
-    font-style: italic;
-    text-align: center;
-`
-
 export const ProjectContainer = styled.div`
     position: fixed;
     display: flex;
@@ -84,10 +75,37 @@ export const ImgContainer = styled.div`
 `
 
 export const ProjectText = styled.div`
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Cormorant', serif;
+    text-align: center;
+    font-size: 7vh;
+    border-radius: 50%;
     color: white;
-    right: 0;
-    bottom: auto;
     width: 100vh;
     height: 100vh;
+    margin-top: 4vh;
     z-index: 800;
+
+    transition: 0.5s ease-in-out !important;
+`
+
+export const Number = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    position: fixed;
+    background-color: white;
+    font-family: 'Cormorant', serif;
+    font-size: 14vh;
+    line-height: 14vh;
+    color: black;
+    z-index: 800;
+    width: 14vh;
+    height: 13vh;
+
+    transition: 0.5s ease-in-out !important;
 `

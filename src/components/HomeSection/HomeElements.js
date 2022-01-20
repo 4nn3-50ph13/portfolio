@@ -92,7 +92,7 @@ export const BackgroundImage = styled.div`
     position: absolute;
     top: -15vh;
     left: -15vw;
-    background-color: #e3ddd8;
+    background-color: white;
     width: 130vw;
     height: 130vh;
     z-index: 2;
