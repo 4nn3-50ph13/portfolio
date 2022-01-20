@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.58bcfbf3.css",
-    "main.js": "/portfolio/static/js/main.7a205c94.js",
+    "main.css": "/portfolio/static/css/main.40f9dfa1.css",
+    "main.js": "/portfolio/static/js/main.1c38bcfb.js",
     "static/js/787.86e70ff7.chunk.js": "/portfolio/static/js/787.86e70ff7.chunk.js",
     "static/media/persephone.png": "/portfolio/static/media/persephone.6722ee796994904a84ac.png",
     "static/media/styx.png": "/portfolio/static/media/styx.c719f05efa27cb65d683.png",
@@ -13,16 +13,17 @@
     "static/media/face.png": "/portfolio/static/media/face.f8063bd76e8aaedd9ae7.png",
     "static/media/tv2.png": "/portfolio/static/media/tv2.df276eed657909710564.png",
     "static/media/evolution.png": "/portfolio/static/media/evolution.05099e17b243adca969b.png",
+    "static/media/cercle.png": "/portfolio/static/media/cercle.b010a69f3dad0fc349e6.png",
     "static/media/yeux.jpg": "/portfolio/static/media/yeux.f860860bf9cd643a45cd.jpg",
     "static/media/AeponyxLogo.png": "/portfolio/static/media/AeponyxLogo.5477ece57599f0c6dcd7.png",
     "index.html": "/portfolio/index.html",
     "static/media/getFetch.cjs": "/portfolio/static/media/getFetch.c780682470504fffbd04.cjs",
-    "main.58bcfbf3.css.map": "/portfolio/static/css/main.58bcfbf3.css.map",
-    "main.7a205c94.js.map": "/portfolio/static/js/main.7a205c94.js.map",
+    "main.40f9dfa1.css.map": "/portfolio/static/css/main.40f9dfa1.css.map",
+    "main.1c38bcfb.js.map": "/portfolio/static/js/main.1c38bcfb.js.map",
     "787.86e70ff7.chunk.js.map": "/portfolio/static/js/787.86e70ff7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.58bcfbf3.css",
-    "static/js/main.7a205c94.js"
+    "static/css/main.40f9dfa1.css",
+    "static/js/main.1c38bcfb.js"
   ]
 }
