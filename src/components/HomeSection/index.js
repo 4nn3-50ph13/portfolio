@@ -5,26 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 const HomeSection = () => {
     const { t } = useTranslation();
-  {/*const bg = document.querySelectorAll('.backgroundImage');
-  const halfX = window.innerWidth / 2;
-  const halfY = window.innerHeight / 2;
-    
-  bg.forEach((el, i) => {
-      gsap.to(el, {
-      z: 1 * (i + 8) });
-    
-  });
-    
-  document.addEventListener('mousemove', e => {
-  bg.forEach((el, i) => {
-      gsap.to(el, {
-      x: (e.clientX - halfX) * (i - 1) * 0.05,
-      y: (e.clientY - halfY) * (i - 1) * 0.05 });
-  });
-  });*/}
 
-
-    
     return (
         <HomeContainer>
             <BackgroundImage className="backgroundImage"></BackgroundImage>

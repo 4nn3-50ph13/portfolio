@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import horlogeFace from '../../images/cercle.png';
+import minutes from '../../images/minute.png';
+import heures from '../../images/heure.png';
 
 export const ContactContainer = styled.div`
     position: relative;
@@ -41,20 +43,27 @@ export const Clock = styled.div`
 `
 
 export const AiguilleHeures = styled.div`
+    background-image: url(${heures});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
     position: absolute;
-    width: 1vh;
+    width: 3vw;
     height: 25vh;
-    background: black;
     top: 25vh;
-    left: 50vw;
+    left: 48vw;
     transform-origin: bottom;
 `
 
 export const AiguilleMinutes = styled.div`
+    background-image: url(${minutes});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+
     position: absolute;
-    width: 0.5vh;
+    width: 2vw;
     height: 38vh;
-    background: black;
     top: 12vh;
     left: 50vw;
     transform-origin: bottom;

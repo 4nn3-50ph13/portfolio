@@ -22,7 +22,7 @@ const Home = () => {
             <LangBar isOpen={isOpen} toggle={toggle}/>
             <TabBar toggle={toggle}/>
             <div className="cursor" style={{ left: cursorX + 'px', top: cursorY + 'px' }}> </div>
-            <Construction style={{opacity: '20%'}}>This site is still being built and is unfinished. ___________________ Ce site est encore en construction et n'est pas fini.</Construction>
+            <Construction style={{opacity: '30%'}}>This site is still being built and is unfinished. ___________________ Ce site est encore en construction et n'est pas fini.</Construction>
         </>
     )
 }

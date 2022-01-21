@@ -32,7 +32,7 @@ export const Icon = styled.div`
 
 export const LangWrapper = styled.div`
   letter-spacing: 8px;
-  transition: 1s;
+  transition: 1s  ease-in-out ;
 `
 
 export const LangLink = styled.div`

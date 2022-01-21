@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import bg1 from '../../images/art/tv2.png';
 
 export const SideBar = styled.div`
     transform-origin: 0 0;
@@ -14,7 +13,7 @@ export const SideBar = styled.div`
     display: inline;
     font-size: 3.8vh;
     line-height: 5vh;
-    letter-spacing: 0.10vh;
+    letter-spacing: 0.65vh;
     height: 5vh;
     width: 100vh;
     border-top-style: solid;
@@ -26,45 +25,47 @@ export const SideBar = styled.div`
 `
 
 export const ArtContainer = styled.div`
-    position: absolute;
-    background-color: black;
+    position: relative;
+    overflow: hidden;
     display: flex;
+    background-color: black;
     flex-direction: column;
     align-items: center;
+    margin-top: -90px;
+    width: 100vw;
     height: 100vh;
-    width: 100%;
-    top: 0;
-`
+    transition: 1s ease-in-out;
 
-export const ArtsContainer = styled.div`
-    position: absolute;
-    background-image: url(${bg1});
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto 95%;
-    height: 100%;
-    width: 80%;
-    margin: auto;
-    z-index: 30;
 `
 
 export const ArtImg = styled.div`
-    display: none;
     position: absolute;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto 95%;
-    height: 100%;
-    width: 80%;
-    margin: auto;
-    z-index: 20;
+    background-size: auto 100%;
+    transform: scale(0.6);
+    opacity: 0.8;
+    z-index: 300;
+    transition: 1s ease-in-out;
+    
+    &:hover {
+        opacity: 1;
+        transition: 1s ease-in-out;
+        transform: scale(0.7);
+    }
 `
 
 export const Description = styled.div`
     position: fixed;
+    opacity: 0;
     background-color: white;
-    width: 100px;
-    height: 100px;
+    color: black;
     border: none;
     z-index: 999;
+    transition: 0.3s ease-in-out;
+    
+    &.hovered {
+        opacity: 100%;
+        transition: 0.3s ease-in-out;
+    }
 `
