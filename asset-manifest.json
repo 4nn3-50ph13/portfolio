@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.40f9dfa1.css",
-    "main.js": "/portfolio/static/js/main.1c38bcfb.js",
+    "main.css": "/portfolio/static/css/main.1d26f27c.css",
+    "main.js": "/portfolio/static/js/main.031a9495.js",
     "static/js/787.86e70ff7.chunk.js": "/portfolio/static/js/787.86e70ff7.chunk.js",
-    "static/media/persephone.png": "/portfolio/static/media/persephone.6722ee796994904a84ac.png",
-    "static/media/styx.png": "/portfolio/static/media/styx.c719f05efa27cb65d683.png",
-    "static/media/pg.png": "/portfolio/static/media/pg.1dc3bc3e8113e027c265.png",
-    "static/media/LotR.png": "/portfolio/static/media/LotR.876c13d625ace3f98c8c.png",
-    "static/media/3graces.png": "/portfolio/static/media/3graces.def2b0240a8bbfa22b13.png",
-    "static/media/portrait.png": "/portfolio/static/media/portrait.85661057559ccb5acb2f.png",
-    "static/media/circa.png": "/portfolio/static/media/circa.94076e77add89fdddfa7.png",
-    "static/media/face.png": "/portfolio/static/media/face.f8063bd76e8aaedd9ae7.png",
-    "static/media/tv2.png": "/portfolio/static/media/tv2.df276eed657909710564.png",
     "static/media/evolution.png": "/portfolio/static/media/evolution.05099e17b243adca969b.png",
+    "static/media/styx.jpg": "/portfolio/static/media/styx.c1c9980b3d2a542be346.jpg",
+    "static/media/persephone.jpg": "/portfolio/static/media/persephone.7d21c3487c9b93f85802.jpg",
+    "static/media/LotR.jpg": "/portfolio/static/media/LotR.caeaedf17a92d4f6f296.jpg",
     "static/media/cercle.png": "/portfolio/static/media/cercle.b010a69f3dad0fc349e6.png",
+    "static/media/3graces.jpg": "/portfolio/static/media/3graces.18ed513ede9186be7e2d.jpg",
+    "static/media/face.jpg": "/portfolio/static/media/face.4e4a9724f18c4d2fac45.jpg",
     "static/media/yeux.jpg": "/portfolio/static/media/yeux.f860860bf9cd643a45cd.jpg",
+    "static/media/portrait.jpg": "/portfolio/static/media/portrait.d4ed0a2f796c80533aa2.jpg",
+    "static/media/circa.jpg": "/portfolio/static/media/circa.8f45ee6dd87272606743.jpg",
+    "static/media/heure.png": "/portfolio/static/media/heure.2d0b52b3283beaca3b36.png",
+    "static/media/minute.png": "/portfolio/static/media/minute.c9230f58c7e29e3c5d96.png",
     "static/media/AeponyxLogo.png": "/portfolio/static/media/AeponyxLogo.5477ece57599f0c6dcd7.png",
     "index.html": "/portfolio/index.html",
     "static/media/getFetch.cjs": "/portfolio/static/media/getFetch.c780682470504fffbd04.cjs",
-    "main.40f9dfa1.css.map": "/portfolio/static/css/main.40f9dfa1.css.map",
-    "main.1c38bcfb.js.map": "/portfolio/static/js/main.1c38bcfb.js.map",
+    "main.1d26f27c.css.map": "/portfolio/static/css/main.1d26f27c.css.map",
+    "main.031a9495.js.map": "/portfolio/static/js/main.031a9495.js.map",
     "787.86e70ff7.chunk.js.map": "/portfolio/static/js/787.86e70ff7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40f9dfa1.css",
-    "static/js/main.1c38bcfb.js"
+    "static/css/main.1d26f27c.css",
+    "static/js/main.031a9495.js"
   ]
 }
