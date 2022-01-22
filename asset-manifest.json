@@ -1,29 +1,35 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.31188d9d.css",
-    "main.js": "/portfolio/static/js/main.a3a9e607.js",
+    "main.css": "/portfolio/static/css/main.c037bfd6.css",
+    "main.js": "/portfolio/static/js/main.35cae9c2.js",
     "static/js/787.86e70ff7.chunk.js": "/portfolio/static/js/787.86e70ff7.chunk.js",
     "static/media/evolution.png": "/portfolio/static/media/evolution.05099e17b243adca969b.png",
+    "static/media/tricot.jpg": "/portfolio/static/media/tricot.b2cafb1677bd72da32c6.jpg",
     "static/media/styx.jpg": "/portfolio/static/media/styx.c1c9980b3d2a542be346.jpg",
-    "static/media/persephone.jpg": "/portfolio/static/media/persephone.7d21c3487c9b93f85802.jpg",
+    "static/media/persephone.jpg": "/portfolio/static/media/persephone.844a49fef34629d92286.jpg",
     "static/media/LotR.jpg": "/portfolio/static/media/LotR.caeaedf17a92d4f6f296.jpg",
     "static/media/cercle.png": "/portfolio/static/media/cercle.b010a69f3dad0fc349e6.png",
     "static/media/3graces.jpg": "/portfolio/static/media/3graces.18ed513ede9186be7e2d.jpg",
+    "static/media/forage2.jpg": "/portfolio/static/media/forage2.4e079c2f416ee1f5e355.jpg",
+    "static/media/cardigan.jpg": "/portfolio/static/media/cardigan.6c65c14bf30dd48ceca8.jpg",
     "static/media/face.jpg": "/portfolio/static/media/face.4e4a9724f18c4d2fac45.jpg",
+    "static/media/bat.jpg": "/portfolio/static/media/bat.a49ced3bb9e1eff8d983.jpg",
+    "static/media/queen.jpg": "/portfolio/static/media/queen.ae7d057ed928814e718b.jpg",
     "static/media/yeux.jpg": "/portfolio/static/media/yeux.f860860bf9cd643a45cd.jpg",
     "static/media/portrait.jpg": "/portfolio/static/media/portrait.d4ed0a2f796c80533aa2.jpg",
+    "static/media/marbles.jpg": "/portfolio/static/media/marbles.075c9418966c0c74ad7b.jpg",
     "static/media/circa.jpg": "/portfolio/static/media/circa.8f45ee6dd87272606743.jpg",
     "static/media/heure.png": "/portfolio/static/media/heure.2d0b52b3283beaca3b36.png",
     "static/media/minute.png": "/portfolio/static/media/minute.c9230f58c7e29e3c5d96.png",
     "static/media/AeponyxLogo.png": "/portfolio/static/media/AeponyxLogo.5477ece57599f0c6dcd7.png",
     "index.html": "/portfolio/index.html",
     "static/media/getFetch.cjs": "/portfolio/static/media/getFetch.c780682470504fffbd04.cjs",
-    "main.31188d9d.css.map": "/portfolio/static/css/main.31188d9d.css.map",
-    "main.a3a9e607.js.map": "/portfolio/static/js/main.a3a9e607.js.map",
+    "main.c037bfd6.css.map": "/portfolio/static/css/main.c037bfd6.css.map",
+    "main.35cae9c2.js.map": "/portfolio/static/js/main.35cae9c2.js.map",
     "787.86e70ff7.chunk.js.map": "/portfolio/static/js/787.86e70ff7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.31188d9d.css",
-    "static/js/main.a3a9e607.js"
+    "static/css/main.c037bfd6.css",
+    "static/js/main.35cae9c2.js"
   ]
 }
