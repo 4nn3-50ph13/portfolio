@@ -10,7 +10,7 @@ export const Construction = styled.div`
     position: fixed;
     bottom: 10px;
     right: 10px;
-    background-color: white;
+    background-color: floralwhite;
     padding: 10px;
     width: 200px;
     height: 270px;

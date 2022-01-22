@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'
 import { IoLanguageOutline } from 'react-icons/io5';
-import { Container, TabLink1, TabLink2, TabLink3, TabLink4, LangBtn } from './TabBarElements';
+import { Container, TabLink1, TabLink2, TabLink3, TabLink4, LangBtn, NextPageHoverR, NextPageLinkR, NextPageHoverL, NextPageLinkL } from './TabBarElements';
 import { useTranslation } from 'react-i18next';
 import HomeSection from '../HomeSection';
 import AboutSection from '../AboutSection';
@@ -9,16 +9,38 @@ import TechSection from '../TechSection';
 import ContactSection from '../ContactSection';
 
 const Tabs = ({toggle}) => {
-  const [toggleState, setToggleState] = useState(0);
   const { t } = useTranslation();
+  const [toggleState, setToggleState] = useState(0);
+  const [tabIndex, setTabIndex] = useState(1);
   const timerRef = useRef(null);
   const [styleClassAbout, setStyleClassAbout] = useState("TabLink");
   const [styleClassTech, setStyleClassTech] = useState("TabLink");
   const [styleClassArt, setStyleClassArt] = useState("TabLink");
   const [styleClassContact, setStyleClassContact] = useState("TabLink");
   const [styleClassLang, setStyleClassLang] = useState("TabLink");
+  const [showR, setShowR] = React.useState(false);
+  const [showL, setShowL] = React.useState(false);
 
-  const toggleTab = (index) => {
+  const toggleTabR = (index) => {
+    if(index==4) {
+        setTabIndex(0);
+    }
+    else {
+        setTabIndex(index+1);
+    }
+    
+    changeStyle(index);
+    timerRef.current = setTimeout(() => setToggleState(index), 1300);
+  };
+
+  const toggleTabL = (index) => {
+    if(index==0) {
+        setTabIndex(4);
+    }
+    else {
+        setTabIndex(index-1);
+    }
+    
     changeStyle(index);
     timerRef.current = setTimeout(() => setToggleState(index), 1300);
   };
@@ -68,16 +90,21 @@ const Tabs = ({toggle}) => {
             <IoLanguageOutline style={{
                 width: '100%',
                 height: '100%',
-                color: 'white ',
+                color: 'floralwhite'
             }}/>
             Languages
         </LangBtn>
         
+        <TabLink1 className={styleClassAbout} onClick={() => toggleTabR(1)} >{t('l1')}</TabLink1>
+        <TabLink2 className={styleClassTech} onClick={() => toggleTabR(2)} >{t('l2')}</TabLink2>
+        <TabLink3 className={styleClassArt} onClick={() => toggleTabR(3)} >{t('l3')}</TabLink3>
+        <TabLink4 className={styleClassContact} onClick={() => toggleTabR(4)} >{t('l4')}</TabLink4>
 
-        <TabLink1 className={styleClassAbout} onClick={() => toggleTab(1)} >{t('l1')}</TabLink1>
-        <TabLink2 className={styleClassTech} onClick={() => toggleTab(2)} >{t('l2')}</TabLink2>
-        <TabLink3 className={styleClassArt} onClick={() => toggleTab(3)} >{t('l3')}</TabLink3>
-        <TabLink4 className={styleClassContact} onClick={() => toggleTab(4)} >{t('l4')}</TabLink4>
+        <NextPageHoverR onMouseEnter={() => setShowR(true)} onMouseLeave={() => setShowR(false)} onClick={() => toggleTabR(tabIndex)}/>
+        <NextPageLinkR  className={showR ? "hovered" : ""}/>
+        
+        <NextPageHoverL onMouseEnter={() => setShowL(true)} onMouseLeave={() => setShowL(false)} onClick={() => toggleTabL(tabIndex)}/>
+        <NextPageLinkL  className={showL ? "hovered" : ""}/>
 
         <div className={toggleState === 0 ? "content  active-content" : "content"} ><HomeSection /></div>
             

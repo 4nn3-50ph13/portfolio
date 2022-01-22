@@ -9,11 +9,11 @@ export const SideBar = styled.div`
     transform: rotate(-90deg);
     
     position: fixed;
-    background: white;
+    background: floralwhite;
     display: inline;
     font-size: 3.8vh;
     line-height: 5vh;
-    letter-spacing: 0.65vh;
+    letter-spacing: 0.04vh;
     height: 5vh;
     width: 100vh;
     border-top-style: solid;
@@ -26,14 +26,13 @@ export const SideBar = styled.div`
 
 export const ArtContainer = styled.div`
     position: relative;
-    overflow: hidden;
     display: flex;
-    background-color: black;
     flex-direction: column;
     align-items: center;
+    background-color: floralwhite;
     margin-top: -90px;
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
     transition: 1s ease-in-out;
 
 `
@@ -56,16 +55,32 @@ export const ArtImg = styled.div`
 `
 
 export const Description = styled.div`
-    position: fixed;
+    position: absolute;
+    display: grid;
+
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
     opacity: 0;
-    background-color: white;
-    color: black;
-    border: none;
+    background-color: #ede8df;
     z-index: 999;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
     
     &.hovered {
         opacity: 100%;
-        transition: 0.3s ease-in-out;
+        transition: 0.5s ease-in-out;
     }
+`
+
+export const DescriptionText = styled.p`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    width: fit-content;
+    margin: auto;
+    height: 50%;
+    color: black;
+    z-index: 999;
 `

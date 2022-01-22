@@ -10,7 +10,7 @@ export const AboutContainer = styled.div`
     height: 100%;
     width: 100%;
     color: black;
-    background-color: white;
+    background-color: floralwhite;
 `
 
 export const SideBar = styled.div`
@@ -22,7 +22,7 @@ export const SideBar = styled.div`
     transform: rotate(-90deg);
     
     position: fixed;
-    background: white;
+    background: floralwhite;
     display: inline;
     font-size: 4vh;
     line-height: 5vh;
@@ -170,7 +170,7 @@ export const EvolContainer = styled.div`
     margin-top: -100vh;
     font-size: 24px;
     font-weight: 600;
-    background-color: white;
+    background-color: floralwhite;
     color: black;
     padding-top: 60px;
     z-index: 330;

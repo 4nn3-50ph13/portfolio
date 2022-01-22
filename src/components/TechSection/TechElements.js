@@ -9,7 +9,7 @@ export const SideBar = styled.div`
     transform: rotate(-90deg);
     
     position: fixed;
-    background: white;
+    background: floralwhite;
     display: inline;
     font-size: 4vh;
     line-height: 5vh;
@@ -29,7 +29,7 @@ export const TechContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: floralwhite;
     background-color: black;
     height: 400vh;
     width: 100vw;
@@ -50,7 +50,7 @@ export const ProjectContainer = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: white;
+    background-color: floralwhite;
     border-radius: 50%;
     
     transition: 0.5s ease-in-out;
@@ -83,7 +83,7 @@ export const ProjectText = styled.div`
     text-align: center;
     font-size: 7vh;
     border-radius: 50%;
-    color: white;
+    color: floralwhite;
     width: 100vh;
     height: 100vh;
     margin-top: 4vh;
@@ -98,7 +98,7 @@ export const Number = styled.div`
     justify-content: flex-start;
     text-align: center;
     position: fixed;
-    background-color: white;
+    background-color: floralwhite;
     font-family: 'Cormorant', serif;
     font-size: 14vh;
     line-height: 14vh;

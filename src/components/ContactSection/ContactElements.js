@@ -5,7 +5,7 @@ import heures from '../../images/heure.png';
 
 export const ContactContainer = styled.div`
     position: relative;
-    background-color: white;
+    background-color: floralwhite;
     margin-top: -90px;
 
     height: 200vh;
@@ -32,7 +32,7 @@ export const Clock = styled.div`
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100vh auto;
-    background-color: white;
+    background-color: floralwhite;
 
     height: 100vh;
     width: 100vw;

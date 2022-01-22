@@ -6,7 +6,7 @@ export const LangContainer = styled.aside`
     z-index: 999;
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: floralwhite;
     display: grid;
     align-items: center;
     top: 0;
@@ -17,7 +17,7 @@ export const LangContainer = styled.aside`
 `
 
 export const CloseIcon = styled(FaTimes)`
-    color: white;
+    color: floralwhite;
     mix-blend-mode: exclusion; 
 `
 
@@ -51,7 +51,7 @@ export const LangLink = styled.div`
     &:hover {
         font-size: 5vw;
         letter-spacing: 12px;
-        color: white;
+        color: floralwhite;
         background-color: black;
     }
 `

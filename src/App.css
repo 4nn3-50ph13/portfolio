@@ -13,7 +13,7 @@ path {
 
 html {
     cursor: none;
-    background-color: white;
+    background-color: floralwhite;
     overflow-y: scroll;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
@@ -44,7 +44,7 @@ html::-webkit-scrollbar { /* WebKit */
 .cursor{
     position: fixed;
     mix-blend-mode: exclusion; 
-    background-color: white;
+    background-color: floralwhite;
     transform: translateX(-30px) translateY(-30px);
     width: 60px;
     height: 60px;
@@ -79,7 +79,7 @@ html::-webkit-scrollbar { /* WebKit */
     align-items: center;
     text-align: center;
     font-family: 'Cormorant', serif;
-    color: white !important;
+    color: floralwhite !important;
     top: 0 !important;
     height: 35px !important;
     width: 100% !important;
@@ -98,17 +98,17 @@ html::-webkit-scrollbar { /* WebKit */
     transition: 0.8s ease-in-out !important;
     top: -100vw !important;
 }
+
 .LangLinkAfter {
     position: fixed !important;
+    top: 30px !important;
     right: 120px !important;
 }
 
 .content-tabs {
   flex-grow : 1;
 }
-.active-tabs {
-  border-bottom: 3px solid #d3d3db;
-}
+
 .content {
   position: relative;
   width: 100%;
@@ -116,6 +116,7 @@ html::-webkit-scrollbar { /* WebKit */
   background-color: black;
   display: none;
 }
+
 .active-content {
   display: block !important;
 }
@@ -142,7 +143,7 @@ html::-webkit-scrollbar { /* WebKit */
     font-size: 10vh !important;
 }
 .bioContainer {
-    color: white !important;
+    color: floralwhite !important;
 }
 
 
