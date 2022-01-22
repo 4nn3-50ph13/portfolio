@@ -137,27 +137,30 @@ export const NextPageLinkR = styled.div`
     -o-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
-    
+   
     position: fixed;
     background: black;
-    display: inline;
-    font-size: 3.8vh;
-    line-height: 5vh;
-    letter-spacing: 0.04vh;
     height: 20vh;
     width: 100vh;
     left: ${window.innerWidth}px;
     top: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 10vh;
+    line-height: 5vh;
+    letter-spacing: 0.04vh;
     color: floralwhite;
     z-index: 989;
     transition: 0.5s ease-in-out;
     
     &.hovered {
         left: ${window.innerWidth - window.innerHeight*0.2}px;
-        transition: 0.5s ease-in-out;
         &:hover {
             left: ${window.innerWidth - window.innerHeight*0.5 + window.innerHeight*0.2}px;
-            transition: 0.5s ease-in-out;
         }
     }
 `
@@ -178,7 +181,7 @@ export const NextPageHoverL = styled.div`
     letter-spacing: 0.04vh;
     height: 10vh;
     width: 100vh;
-    left: 0px;
+    left: 10vh;
     top: 21vh;
     z-index: 999;
 `
@@ -193,23 +196,29 @@ export const NextPageLinkL = styled.div`
     
     position: fixed;
     background: black;
-    display: inline;
-    font-size: 3.8vh;
-    line-height: 5vh;
-    letter-spacing: 0.04vh;
     height: 20vh;
     width: 100vh;
     left: 0px;
     top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 10vh;
+    line-height: 5vh;
+    letter-spacing: 0.04vh;
     color: floralwhite;
     z-index: 989;
     transition: 0.5s ease-in-out;
+
     
     &.hovered {
-        left: ${window.innerWidth - window.innerHeight*0.2}px;
+        left: 20vh;
         transition: 0.5s ease-in-out;
         &:hover {
-            left: ${0- window.innerHeight*0.5 + window.innerHeight*0.2}px;
+            left: 20vh;
             transition: 0.5s ease-in-out;
         }
     }

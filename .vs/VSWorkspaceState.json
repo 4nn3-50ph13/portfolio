@@ -1,10 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
-    "\\public\\assets",
-    "\\src"
+    "\\src",
+    "\\src\\assets",
+    "\\src\\assets\\locales\\en",
+    "\\src\\assets\\locales\\fr",
+    "\\src\\components",
+    "\\src\\components\\TabBar"
   ],
-  "SelectedNode": "\\public\\assets\\locales",
+  "SelectedNode": "\\src\\components\\TabBar\\TabBarElements.js",
   "PreviewInSolutionExplorer": false
 }
