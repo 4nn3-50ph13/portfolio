@@ -1,7 +1,7 @@
 {
     "l0": "Home",
     "l1": "About",
-    "l2": "Technologies",
+    "l2": "Engineering",
     "l3": "Arts",
     "l4": "Contact",
 
@@ -45,5 +45,17 @@
     "persephoneTitle": "The abduction of Proserpina",
     "persephoneDate": "Oil, 2017",
     "circaTitle": "Circus performance",
-    "circaDate": "Circa festival in Auch, 2018" 
+    "circaDate": "Circa festival in Auch, 2018",
+    "cardiganTitle": "Hand knit cardigan",
+    "cardiganDate": "Pattern by Erika Knight, 2021",
+    "marblesTitle": "Elgin Marble sketch",
+    "marblesDate": "Pencil on paper, 2020",
+    "batTitle": "Notebook sketches",
+    "batDate": "Pen on paper, 2021",
+    "queenTitle": "Miniature painting of Queen (Bohemian Rhapsody)",
+    "queenDate": "Acrylic, 2017",
+    "forageTitle": "Hand knit scarf detail",
+    "forageDate": "Pattern by Erika Knight, 2021",
+    "tricotTitle": "Detail of knitting project",
+    "tricotDate": "2021"
 }

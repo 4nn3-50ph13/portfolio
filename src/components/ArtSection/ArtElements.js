@@ -30,9 +30,10 @@ export const ArtContainer = styled.div`
     flex-direction: column;
     align-items: center;
     background-color: floralwhite;
+    margin: auto;
     margin-top: -90px;
-    width: 100vw;
-    height: 200vh;
+    width: 1200px;
+    height: 2100px;
     transition: 1s ease-in-out;
 
 `
@@ -73,14 +74,5 @@ export const Description = styled.div`
 `
 
 export const DescriptionText = styled.p`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    vertical-align: middle;
-    width: fit-content;
-    margin: auto;
-    height: 50%;
     color: black;
-    z-index: 999;
 `
